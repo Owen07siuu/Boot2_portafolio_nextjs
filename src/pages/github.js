@@ -1,8 +1,9 @@
+import Layout from '@/components/Layout'
 import React from 'react'
 
 export const github = () => {
   return (
-    <div>github</div>
+    <Layout>github</Layout>
   )
 }
 
