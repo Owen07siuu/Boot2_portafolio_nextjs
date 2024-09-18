@@ -9,28 +9,30 @@ export default function Home() {
        <Layout footer={true}>
       {/* Header Card */}
       <header className="row">
-        <div className="col-md-12">
-          <div className="card card-body bg-secondary text-light animate__animated animate__fadeIn">
-            <div className="row">
-              <div className="col-md-4 text-center">
-                <img src="/profile_ines.png" alt="profile Owen Smith" className="img-fluid" />
-              </div>
-              <div className="col-md-8">
-                <h1>Inés María Oliveros</h1>
-                <h3>FullStack Developer</h3>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Molestiae atque ullam perferendis harum, nisi porro voluptate,
-                  iste consequuntur enim reprehenderit architecto consectetur cum?
-                  Totam ad molestias natus illum illo officia.
-                </p>
-                <Link href="/hireme" className="btn btn-outline-light">
-                  Hire Me
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div className="col-md-12">
+  <div className="card card-body bg-secondary text-light animate__animated animate__fadeIn">
+    <div className="row">
+      <div className="col-md-4 text-center">
+        <img src="/profile_owen1.jpg" alt="profile Owen Smith" className="img-fluid" />
+      </div>
+      <div className="col-md-8 d-flex flex-column justify-content-center align-items-center text-center">
+        <h1>Owen Smith Angarita</h1>
+        <h3>Estudiante de desarrollo web</h3>
+        <p>
+        Desde que descubrí el desarrollo web me enganché completamente.
+        Es la oportunidad de crear cosas desde cero con código y verlas convertirse en vida.
+        Me encanta probar nuevas ideas, aprender nuevas tecnologías y pensar en la forma
+        de mejorar el trabajo. Programar no es solo trabajo para mí; es algo de lo que disfruto
+        y en lo que puedo seguir creciendo.
+        </p>
+        <Link href="/hireme" className="btn btn-outline-light">
+          Trabaja Conmigo
+        </Link>
+      </div>
+    </div>
+  </div>
+</div>
+
          {/* Second section */}
 
       <section className="row">
@@ -63,8 +65,7 @@ export default function Home() {
           {/* Experience */}
           <div className="card bg-light animate__animated animate__fadeInRight">
             <div className="card-body">
-              <h1>Experience</h1>
-
+              <h1>Experiencia</h1>
               <ul>
                 {/* List Item Experience */}
                 {experiences.map(({ title, description, from, to }, index) => (
@@ -78,7 +79,7 @@ export default function Home() {
                 ))}
               </ul>
               <Link href="/hireme" className="btn btn-light">
-                Know More
+                Conoce mas
               </Link>
             </div>
           </div>
@@ -103,7 +104,7 @@ export default function Home() {
                       <div className="card-body">
                         <h3>{name}</h3>
                         <p>{description}</p>
-                        <a href="#!">Know More</a>
+                        <a href="#!">Conoce mas</a>
                       </div>
                     </div>
                   </div>
@@ -111,8 +112,8 @@ export default function Home() {
 
                 <div className="col-md-12 mt-4">
                   <div className="text-center">
-                    <Link href="/portfolio" className="btn btn-outline-light">
-                      More Projects
+                    <Link href="https://github.com/Owen07siuu" className="btn btn-outline-light">
+                      Mas proyectos
                     </Link>
                   </div>
                 </div>
