@@ -6,8 +6,7 @@ import { skills, experiences, projects } from "./profile";
 
 export default function Home() {
   return (
-   <Layout >
-       {/*</Layout><Layout footer={true}>*/}
+       <Layout footer={true}>
       {/* Header Card */}
       <header className="row">
         <div className="col-md-12">
@@ -93,7 +92,7 @@ export default function Home() {
             <div className="card card-body bg-dark">
               <div className="row">
                 <div className="col-md-12 my-2">
-                  <h1 className="text-center text-light">Portfolio</h1>
+                  <h1 className="text-center text-light">Portafolio</h1>
                 </div>
                 {projects.map(({ name, description, image }, index) => (
                   <div className="col-md-4 p-2" key={index}>
